@@ -60,7 +60,7 @@ eredményez.
 .. |qgis-icon04.png| image:: figs/qgis-icon04.png
 
 Irodalomjegyzék
----------------
+===============
 
 Solymosi, N., Wagner, S. E., Maróti-Agóts, Á., & Allepuz, A. (2010).
 maps2WinBUGS: a QGIS plugin to facilitate data processing for Bayesian
