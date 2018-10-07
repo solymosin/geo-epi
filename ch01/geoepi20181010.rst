@@ -39,10 +39,10 @@ különböző kiterjesztésű (``.cpg``, ``.csv``, ``.dbf``, ``.prj``,
 ``.shp``, ``.shx``) fájlban tárolva.
 
 A QGIS ``Réteg`` menüjéből, a ``Réteg hozzáadás`` menülistából válasszuk
-ki a ``Vektor réteg hozzáadás...`` menüelemet. |qgis01.png| A megjelenő
-``Vektor réteg hozzáadása`` ablakban hagyjuk kijelölve a *Fájl* típust,
-illetve a ``Kódolás`` legördülő mezőben a ``System`` értéket. A
-``Tallóz`` gombra kattintva megjelenő
+ki a ``Vektor réteg hozzáadás...`` menüelemet. |qgis-icon04.png| A
+megjelenő ``Vektor réteg hozzáadása`` ablakban hagyjuk kijelölve a
+*Fájl* típust, illetve a ``Kódolás`` legördülő mezőben a ``System``
+értéket. A ``Tallóz`` gombra kattintva megjelenő
 ``Vektor réteg megadása OGR támogatással`` című fájlmenedzser fájltípus
 választó legördülő mezőjében az alapértelmezett ``Minden fájl`` érték
 helyett válasszuk ki az ``ESRI Shape fájl`` elemet. Ezek után jelöljük
@@ -52,7 +52,12 @@ ki a ``HUN_adm0.shp``, ``HUN_adm1.shp`` és ``HUN_adm2.shp`` fájlokat. A
 ``Megnyitás`` gombot, ami az alábbi ábrához hasonló képernyőt
 eredményez.
 
-.. |qgis01.png| image:: figs/qgis-icon04.png
+.. figure:: figs/qgis01.png
+   :alt: qgis01.png
+
+   qgis01.png
+
+.. |qgis-icon04.png| image:: figs/qgis-icon04.png
 
 Irodalomjegyzék
 ---------------
