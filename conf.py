@@ -47,6 +47,7 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
+    'sphinx.ext.githubpages',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -68,6 +69,8 @@ master_doc = 'index'
 # Usually you set "language" from the command line for these cases.
 language = 'hu'
 
+today_fmt = '%Y. %B %d.'
+
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path .
@@ -82,7 +85,7 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+#html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -136,7 +139,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'geo-epi.tex', 'geo-epi Documentation',
+    (master_doc, 'geo-epi.tex', 'geo-epi',
      'Solymosi Norbert', 'manual'),
 ]
 
@@ -146,7 +149,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'geo-epi', 'geo-epi Documentation',
+    (master_doc, 'geo-epi', 'geo-epi',
      [author], 1)
 ]
 
@@ -157,7 +160,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'geo-epi', 'geo-epi Documentation',
+    (master_doc, 'geo-epi', 'geo-epi',
      author, 'geo-epi', 'One line description of project.',
      'Miscellaneous'),
 ]
