@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Geo-Epi'
+project = 'geo-epi'
 copyright = '2018, Solymosi Norbert'
 author = 'Solymosi Norbert'
 
