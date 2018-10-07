@@ -1,0 +1,66 @@
+
+Quantum GIS
+===========
+
+A `Quantum GIS (QGIS) <https://www.qgis.org>`__ nyílt forráskódú,
+ingyenes földrajzi információs rendszer (GIS), amely különböző operációs
+környezetekben (MS Windows, Mac OS X, Linux, BSD, Android) is
+`telepíthető <https://www.qgis.org/en/site/forusers/download.html>`__. A
+szoftvert széles körben használják különböző területeken, így
+állatorvosi epidemiológiai munkában, elemzésekben is (Solymosi et al.,
+2013). Az eszköz nagy előnye, hogy kiegészítő modulokat (plugin) lehet
+hozzá fejleszteni, telepíteni speciális feladatok megvalósítása céljából
+(Solymosi et al., 2010, 2013). Ebben a fejezetben a QGIS használatát
+olyan példákon keresztül mutatjuk be, amelyek gyakrabban fordulnak elő
+az állatorvosi epidemiológiai vizsgálatokban.
+
+Digitális térképek
+------------------
+
+A QGIS, mint ahogy a többi GIS is, különböző digitális térképeket kezel.
+A térképeket tárolhatjuk fájlként vagy adatbázisban. A digitális térkép
+két alaptípusa a vektor- és a pixelgrafikus térkép. A vektorgrafikus
+térképek legelterjedtebb fájlformátuma az ún. `ESRI
+shapefile <https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf>`__.
+Mivel ennek a használata a legegyszerűbb, első példáinkban ilyen
+állományokat fogunk használni.
+
+Digitális térképeket különböző forrásokból szerezhetünk be. Lehetnek
+meglehetősen költségesek, de szerencsére számos ingyenes térkép is
+elérhető. Magyarország országos, megyei és kistérségi vektorgrafikus
+térképét ingyenesen letölthetjük pl. a `Global Administrative
+Areas <http://www.gadm.org/country>`__ honlapról. Ezen az oldalon az
+ország nevének megadása után ki kell választanunk a letöltendő
+fájlformátumot (``Shapefile``). Az ``OK`` gomb megnyomása után a
+megjelenő térkép alatti ``download`` linkre kattintva töltődik le a
+zippelt állomány. Kitömörítése után három térképet (``HUN_adm0``,
+``HUN_adm1``, ``HUN_adm2``) láthatunk, mindegyik térképet hat-hat
+különböző kiterjesztésű (``.cpg``, ``.csv``, ``.dbf``, ``.prj``,
+``.shp``, ``.shx``) fájlban tárolva.
+
+A QGIS ``Réteg`` menüjéből, a ``Réteg hozzáadás`` menülistából válasszuk
+ki a ``Vektor réteg hozzáadás...`` menüelemet. |qgis01.png| A megjelenő
+``Vektor réteg hozzáadása`` ablakban hagyjuk kijelölve a *Fájl* típust,
+illetve a ``Kódolás`` legördülő mezőben a ``System`` értéket. A
+``Tallóz`` gombra kattintva megjelenő
+``Vektor réteg megadása OGR támogatással`` című fájlmenedzser fájltípus
+választó legördülő mezőjében az alapértelmezett ``Minden fájl`` érték
+helyett válasszuk ki az ``ESRI Shape fájl`` elemet. Ezek után jelöljük
+ki a ``HUN_adm0.shp``, ``HUN_adm1.shp`` és ``HUN_adm2.shp`` fájlokat. A
+``Megnyitás`` gombra kattintva visszatértünk a
+``Vektor réteg hozzáadása`` ablakhoz, ahol újra nyomjuk meg a
+``Megnyitás`` gombot, ami az alábbi ábrához hasonló képernyőt
+eredményez.
+
+.. |qgis01.png| image:: figs/qgis-icon04.png
+
+Irodalomjegyzék
+---------------
+
+Solymosi, N., Wagner, S. E., Maróti-Agóts, Á., & Allepuz, A. (2010).
+maps2WinBUGS: a QGIS plugin to facilitate data processing for Bayesian
+spatial modeling. Ecography, 33(6), 1093–1096.
+
+Solymosi, N., Ózsvári, L., & Allepuz, A. (2013). A tool for spatially
+explicit network analysis in veterinary epidemiology. In GEOVET London,
+UK.
