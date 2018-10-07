@@ -1,10 +1,10 @@
 
-Salve!
+Geo-epidemiológia jegyzetek
 ===============================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Geo-epidemiológia:
+   :caption: Tartalomjegyzék
 
    ch01/geoepi20181010
 
