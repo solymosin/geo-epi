@@ -26,7 +26,7 @@ author = 'Solymosi Norbert'
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
-release = '0.0.1'
+release = '0.01'
 
 
 # -- General configuration ---------------------------------------------------
@@ -47,7 +47,6 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
-    'sphinx.ext.githubpages',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -69,9 +68,6 @@ master_doc = 'index'
 # Usually you set "language" from the command line for these cases.
 language = 'hu'
 
-#today_fmt = '%B %d, %Y'
-today_fmt = '%Y. %B %d.'
-
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path .
@@ -85,9 +81,8 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-# http://www.sphinx-doc.org/en/stable/theming.html
 #
-#html_theme = 'agogo'
+html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -114,7 +109,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'GeoEpidoc'
+htmlhelp_basename = 'geo-epidoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -141,7 +136,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'GeoEpi.tex', 'Geo-epidemiológia',
+    (master_doc, 'geo-epi.tex', 'geo-epi Documentation',
      'Solymosi Norbert', 'manual'),
 ]
 
@@ -151,7 +146,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'genepi', 'Geo-epidemiológia',
+    (master_doc, 'geo-epi', 'geo-epi Documentation',
      [author], 1)
 ]
 
@@ -162,8 +157,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'GeoEpi', 'Geo-epidemiológia',
-     author, 'GeoEpi', 'One line description of project.',
+    (master_doc, 'geo-epi', 'geo-epi Documentation',
+     author, 'geo-epi', 'One line description of project.',
      'Miscellaneous'),
 ]
 
