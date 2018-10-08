@@ -174,9 +174,9 @@ adatokat, ennek a táblázatnak az első sorai:
 
 Ilyen táblázatokat importálhatunk a QGIS-be, ehhez azonban előtte el
 kell mentenünk azokat ún. vesszővel határolt formátumú (CSV) szöveges
-`állományban <./esetek01.csv>`__. Ezek után a QGIS ``Réteg``-menüjéből,
-a ``Réteg hozzáadás`` menülistából a
-``Tagolt szöveg réteg hozzáadás...`` menüelemet kiválasztva az
+`állományban <https://raw.githubusercontent.com/solymosin/geo-epi/master/ch01/esetek01.csv>`__.
+Ezek után a QGIS ``Réteg``-menüjéből, a ``Réteg hozzáadás`` menülistából
+a ``Tagolt szöveg réteg hozzáadás...`` menüelemet kiválasztva az
 ``Adatforrás kezelő`` ablak jelenik meg.
 
 .. figure:: figs/qgis06.png
@@ -402,7 +402,7 @@ pontokban előfordult esetek számának összegét. Az ez alapján készített
 .. |Pontokhoz tartozó adatok poligonok szerinti aggregálását segítő ablak| image:: figs/qgis13.png
 
 Irodalomjegyzék
----------------
+===============
 
 Solymosi, N., Wagner, S. E., Maróti-Agóts, Á., & Allepuz, A. (2010).
 maps2WinBUGS: a QGIS plugin to facilitate data processing for Bayesian
